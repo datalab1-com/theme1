@@ -1,0 +1,421 @@
+
+/*****************************************************************/
+/* quiz */
+/*****************************************************************/
+
+#question-graphics img {
+	display: none;
+	height: 30px;
+	margin-bottom: 7px;
+}
+
+#question-graphics #question-prompt {
+}
+
+#question-graphics #question-right {
+}
+
+#question-graphics #question-wrong {
+}
+
+.quizSection {
+	border: 0; 
+	margin: 0; 
+	padding: 0;
+}
+
+.quizStats {
+	font-size: 130%;
+}
+
+.quizStatsAlert {
+	font-size: 130%;
+	color: red;
+}
+
+/*****************************************************************/
+/* faq */
+/*****************************************************************/
+
+.label-faq {
+	display: inline-block; 
+	background-color: #A4CC58; 
+	line-height: 2; 
+	margin: 5px;
+	font-weight: bold;	
+	font-size: 20px; 
+}
+
+.label-faq-active{
+	background-color: #79A22A;
+}
+
+.badge-faq {
+	margin-left: 5px; 
+	font-size: auto; 
+	font-weight: bold; 
+	background: #8DB93A; 
+	color: white;
+}
+.badge-faq-active {
+	background: #A1C954; 
+}
+
+.faqclass ul {
+	margin-top: 10px;
+	list-style-type: none;
+	list-style: none;
+	padding-left: 10px;
+}
+
+ul.steps {  /* lines like: * This is the first list item line */
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.faqclass li.starBullet { /* lines like: * This is the first list item line */
+	margin: 5px 0;
+}
+
+.faqclass li.starBullet:before {
+	content: "\2605";
+	margin: 0 .5em;  
+}
+
+div.stepLine { /* lines like: "STEP 1: ..." */
+	margin: 10px 20px;
+}
+
+/*****************************************************************/
+/* services */
+/*****************************************************************/
+
+/* services headers */
+#services h2 {
+	margin-bottom: 20px;
+}
+
+#services p {
+	font-size: 20px;
+}
+
+/* services lists like: * This is list line one. */
+#services ul {
+	font-size: 20px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#services li {
+	margin-bottom: 10px;
+}
+
+#services li:before {
+	content: "\2605";
+	margin: 0 .5em;  
+}
+
+/*****************************************************************/
+/* frontpage */
+/*****************************************************************/
+
+.section-green,
+.section-green  h1,
+.section-green h2 {
+	background: #5BBC2E;
+	color: white;
+}
+
+.section-green h3 {
+	color: white; 
+	font-weight: normal; 
+	margin: 0;
+	padding: 0;
+}
+
+/*****************************************************************/
+/* bootstrap overrides */
+/*****************************************************************/
+
+.col-sm-4 {
+
+	border: 1px white solid;
+	min-height: 300px;
+	background: #D5FB90;
+	padding: 0;
+}
+
+.col-sm-4 h5
+{
+	font-size: 150%;
+	padding: 20px;
+	background: #FCFC69;
+}
+
+.col-sm-4 p
+{
+	font-size: 120%;
+	padding: 0 20px;
+}
+
+/*****************************************************************/
+/* cake messages overrides */
+/*****************************************************************/
+
+div.message {
+  cursor: pointer;
+  display: block;
+  font-weight: normal;
+  padding: 0 1.5rem 0 1.5rem;
+  transition: height 300ms ease-out 0s;
+  background-color: #a0d3e8;
+  color: #626262;
+  position: fixed;
+  top: 70px;
+  right: 5px;
+  z-index: 999;
+  overflow: hidden;
+  height: 50px;
+  line-height: 2.5em;
+}
+
+div.message:before {
+  line-height: 0px;
+  font-size: 20px;
+  height: 12px;
+  width: 12px;
+  border-radius: 15px;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+  left: -11px;
+  background-color: #FFF;
+  padding: 12px 14px 12px 10px;
+  content: "i";
+  color: #a0d3e8;
+}
+
+div.message.error {
+  background-color: #C3232D;
+  color: #FFF;
+}
+
+div.message.error:before {
+  padding: 11px 16px 14px 7px;
+  color: #C3232D;
+  content: "x";
+}
+div.message.hidden {
+  height: 0;
+}
+
+/*****************************************************************/
+/* forms */
+/*****************************************************************/
+
+.form-style-10{
+	max-width:450px;
+	padding:30px;
+	margin:40px auto;
+	background: #FFF;
+	border-radius: 10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius: 10px;
+	border: 2px solid lightgray;
+	xbox-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	x-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	x-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+}
+.form-style-10 .inner-wrap{
+	padding: 30px;
+	background: #F8F8F8;
+	border-radius: 6px;
+	margin-bottom: 15px;
+}
+
+.form-style-10 h1{
+	background: #6ED140;
+	color: #fff;
+	xborder: 1px solid lightgray;
+	padding: 20px 30px 15px 30px;
+	margin: -30px -30px 30px -30px;
+	border-radius: 10px 10px 0 0;
+	-webkit-border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+	font: normal 30px 'Helvetica Neue', serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	/* sbw -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17); */
+	/* sbw -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17); */
+	/* sbw box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17); */
+}
+.form-style-10 h1 > span{
+	display: block;
+	margin-top: 2px;
+	font: 13px Arial, Helvetica, sans-serif;
+}
+.form-style-10 label{
+	display: block;
+	font: 18px Arial, Helvetica, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #888;
+	margin: 10px 0;
+}
+.form-style-10 input[type="text"],
+.form-style-10 input[type="date"],
+.form-style-10 input[type="datetime"],
+.form-style-10 input[type="email"],
+.form-style-10 input[type="number"],
+.form-style-10 input[type="search"],
+.form-style-10 input[type="time"],
+.form-style-10 input[type="url"],
+.form-style-10 input[type="password"],
+.form-style-10 textarea,
+.form-style-10 select {
+	display: block;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	padding: 8px;
+	border-radius: 6px;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	border: 2px solid lightgray;
+	xbox-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.33);
+	x-moz-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.33);
+	x-webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.33);
+}
+
+.form-style-10 .section{
+	font: normal 20px 'Bitter', serif;
+	color: #2A88AD;
+	margin-bottom: 5px;
+}
+.form-style-10 .section span {
+	background: #2A88AD;
+	padding: 5px 10px 5px 10px;
+	position: absolute;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border: 4px solid #fff;
+	font-size: 14px;
+	margin-left: -45px;
+	color: #fff;
+	margin-top: -3px;
+}
+
+/*****************************************************************/
+/* sbw added to override essentials.css#100 */
+/*****************************************************************/
+.form-style-10 button {
+	background: #5BBC2E;
+	padding: 8px 20px 8px 20px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	color: #fff;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+	font: bold 30px 'Helvetica Neue', sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	border: 1px solid #257C9E;
+	font-size: 18px;
+}
+.form-style-10 button:hover {
+	background: #35890D;
+}
+
+.form-style-10 input[type="button"], 
+.form-style-10 input[type="submit"]{
+	background: #2A88AD;
+	padding: 8px 20px 8px 20px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	color: #fff;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+	font: normal 30px 'Bitter', serif;
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	border: 1px solid #257C9E;
+	font-size: 15px;
+}
+.form-style-10 input[type="button"]:hover, 
+.form-style-10 input[type="submit"]:hover{
+	background: #2A6881;
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+}
+.form-style-10 .privacy-policy{
+	float: right;
+	width: 250px;
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #4D4D4D;
+	margin-top: 10px;
+	text-align: right;
+}
+
+/*****************************************************************/
+/* tables */
+/*****************************************************************/
+
+.form-style-10-table {
+	padding: 20px;
+}
+
+.form-style-10-table table {
+  background: #fff;
+  margin-bottom: 1px;
+  border: none;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.form-style-10-table table thead {
+  background: none;
+}
+
+.form-style-10-table table tr {
+  border-bottom: 1px solid #ebebec;
+}
+
+.form-style-10-table table thead tr {
+  border-bottom: 1px solid #1798A5;
+}
+
+.form-style-10-table table tr th {
+	padding: 0.5625rem 0.625rem;
+	text-align: left;
+	font-size: 140%; 
+	font-weight: bold;"  
+}
+.form-style-10-table table tr td {
+	text-align: left;
+	font-size: 120%; 
+}
+
+.form-style-10-table table tbody tr:nth-of-type(even) {
+  background: none;
+}
+
+.form-style-10-table table tbody tr:nth-of-type(odd) {
+  background: #5BBC2E; 
+  background: #CFF08E;
+  background: #A4CC58;
+}
+.form-style-10-table table tbody tr th a:nth-of-type(odd) {
+	color: white;
+}
+
+.form-style-10-table table tr td {
+  padding: 10px;
+}
