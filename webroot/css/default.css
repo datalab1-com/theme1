@@ -300,6 +300,19 @@
 	.bgBlue {
 		background-color: #286090;
 	}
+	
+	.marginBottom20 {
+		margin-bottom: 20px;
+	}
+	.marginBottom30 {
+		margin-bottom: 30px;
+	}
+	.marginBottom40 {
+		margin-bottom: 40px;
+	}
+	.marginBottom50 {
+		margin-bottom: 50px;
+	}
 
 .headerHeightOffset {
 	xheight: 72px;		/* this gets changed by js */
